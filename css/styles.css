@@ -10,9 +10,9 @@ body {
 }
 
 #nav-principal {
-  padding-right:40px; 
-  width: 400px; 
-  text-align: center;
+  padding: 40px; 
+  width: 400px;
+  height: 100px;
 }
 
 .background{
@@ -27,11 +27,6 @@ body {
   width: 100%;
 }
 
-.menu:focus {
-  outline: thin dotted;
-  outline-offset: 0px;
-}
-
 .navegacao {
   width: 100%;
 }
@@ -43,69 +38,147 @@ body {
 nav .logo {
   width: 206.83px;
   height: 52px;
-  left: 355px;
-  top: 105px;
+  margin: 15px;
 }
 
 nav  .icone {
   float: right ;
-  margin: 0;
+  margin: 15px;
   padding: 0;
 }
 
 nav .instagram {
-  left: 66.46%;
-  right: 32.59%;
-  top: 0.6%;
-  bottom: 98%;
   color: #fff;
+  padding: 0;
 }
 
 nav .facebook {
-  left: 68.42%;
-  right: 31.09%;
-  top: 1.6%;
-  bottom: 98%;
   color: #fff;
+  padding: 0;
 }
 
 nav .whatsapp {
-  left: 69.84%;
-  right: 29.17%;
-  top: 1.58%;
-  bottom: 98.01%;
+  padding: 0;
   color: white;
 }
 
 nav .telefone {
-  left: 72.97%;
-  right: 22.24%;
-  top: 0.64%;
-  bottom: 98.05%;
   color: #fff;
+  margin-left: auto;
+  width: 120px;
   font-style: normal;
   font-size: 13px;
 }
 
-.menu {
-  width: 2rem;  
-  /*text-align: center;*/
-  color: #00FFB2;
-  left: 80.52%;
-  right: 18.31%;
-  top: 1.62%;
-  bottom: 98.03%;
-  background: none;
-  border: none;
-
+#menu {
+	width: 25px;
+	height: 20px;
+	margin: 47px 0 0 1250px;
+	cursor: pointer;
 }
+
+.bar {
+	height: 4px;
+	width: 100%;
+	background-color: #00FFB2;
+	display: block;
+	border-radius: 4px;
+	transition: 0.3s ease;
+}
+
+#bar1 {
+	transform: translateY(-4px);
+}
+
+#bar3 {
+	transform: translateY(4px);
+}
+
+.nav li a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+	color: #808080;
+	text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+  color: #00FFB2;
+}
+
+.nav li {
+	list-style: none;
+	padding: 30px 0 0 1080px;
+}
+
+.nav {
+	padding: 0;
+	margin: 0 10px;
+	transition: 0.3s ease;
+	display: none;
+}
+
+.menu-bg, #menu-bar {
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.menu-bg {
+	z-index: 0;
+	width: 0;
+	height: 0;
+  margin: 70px 0 0 980px;
+  background: #333333;
+	/*background: radial-gradient(circle,#333333,#333333);
+	border-radius: 50%;*/
+	transition: 0.3s ease;
+}
+
+#menu-bar {
+	z-index: 2;	
+}
+
+.change-bg {
+	width: 650px;
+	height: 640px;
+	/*transform: translate(-60%,-30%);*/
+}
+
+.change .bar {
+	background-color: white;
+}
+
+.change #bar1 {
+	transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+	transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+	opacity: 0;
+}
+
+.change {
+	display: block;
+}
+
+.logo-menu {
+  margin: 30px 0 0 980px;
+}
+
 .x{
-  margin: 0.9375rem;
+  margin: auto;
+  margin-right: 25px;
   float: left;
 }
 
 .orcamento {
-  margin: 0.3125rem;
+  margin: auto;
   float: right;
 }
 
@@ -155,8 +228,8 @@ nav .telefone {
 .solicitar {
   width: 233px;
   height: 29px;
-  left: 1281px;
-  top: 521px;
+  left: 1081px;
+  top: 321px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -167,7 +240,8 @@ nav .telefone {
 }
 
 .flecha {
-  margin: 0;
+  padding: 0;
+  margin: 0 0 25px 5px;
   float: right;
   color: #fff;
   background: none;
@@ -261,8 +335,6 @@ nav .telefone {
 .equipe1 {
   width: 280px;
   height: 314px;
-  left: 352px;
-  top: 1188px;
   border-radius: 12px;
 }
 
@@ -482,7 +554,14 @@ nav .telefone {
 }
 
 .blog {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 5rem;
+}
+
+.blog-titulo {
+  display: flex;
+  justify-content: space-between;
 }
 
 .titulo5 {
@@ -500,10 +579,7 @@ nav .telefone {
 
 
 .garrafa {
-  left: 34.32%;
-  right: 62.86%;
-  top: 78.02%;
-  bottom: 20.8%;
+  margin: 0;
 }
 
 .texto1 {
@@ -523,7 +599,7 @@ nav .telefone {
 
 .flecha5 {
   float: right;
-  margin-left: 75px;
+  margin-top: 8px;
   width: 14px;
   height: 14px;
   left: 1567px;
@@ -614,35 +690,38 @@ nav .telefone {
   color: #74A798;
 }
 
-#solictarOrcamento {
+#solictar-orcamento {
+  border: 1px solid red;
   margin: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-div img .logo2 {
-  left: 23.23%;
-  right: 66%;
-  top: 94.89%;
-  bottom: 3.97%;
+.logo2 {
+  margin: 75px;
 }
 
 .icones {
   float: right;
+  margin-top: 75px;
 }
 
 .orcamento2 {
+  display: flex;
+  justify-content: space-between;
   float: right;
-  margin-top: 76px;
+  margin: 76px 0 5px 176px;
+  padding: 0 75px 0 0;
+}
+
+.seta-botao {
+  margin: 0 15px 0 1050px;
 }
 
 .paragrafo5 {
-  margin-top: 86px;
-  left: 17.97%;
-  right: 60.78%;
-  top: 97.24%;
-  bottom: 1.8%;
+  padding: 0 90px 0 100px;
+  margin-top: 5px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -653,6 +732,7 @@ div img .logo2 {
 
 .telefone2 {
   float: left;
+  margin: 5px 5px 5px 5px;
   margin-right: 52px;
   font-family: Poppins;
   font-style: normal;
@@ -663,34 +743,22 @@ div img .logo2 {
 }
 
 .instagram2 {
-  left: 76.88%;
-  right: 22.17%;
-  top: 94.92%;
-  bottom: 4.68%;
+  padding: 5px;
   color: #828282;
 }
 
 .facebook2 {
-  left: 78.83%;
-  right: 20.67%;
-  top: 94.92%;
-  bottom: 4.68%;
+  padding: 5px;
   color: #828282;
 }
 
 .whatsapp2 {
-  left: 80.26%;
-  right: 18.75%;
-  top: 94.89%;
-  bottom: 4.69%;
+  padding: 5px;
   color: #828282;
 }
 
 .paragrafo6 {
-  left: 66.88%;
-  right: 23.75%;
-  top: 96.95%;
-  bottom: 2.37%;
+  margin: 0 25px 25px 15px;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -698,11 +766,6 @@ div img .logo2 {
   line-height: 170%;
   color: #333333;
 }
-
-.orcamento2 button {
-  float: right;
-}
-
 
 #modalTitulo {
   padding-left: 25px;
@@ -772,17 +835,17 @@ textarea:focus, input:focus {
   opacity: 0.6;
 }
 
+.botaoModal {
+  background-color: #333333;
+}
+
 .icones2 {
   margin-top: 25px;
 }
 
 .telefone3 {
   float: left;
-  margin-right: 300px;
-  left: 14.49%;
-  right: 65.84%;
-  top: 81.25%;
-  bottom: 17.38%;
+  margin-right: 325px;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -794,66 +857,57 @@ textarea:focus, input:focus {
 .instagram3 {
   float: right;
   margin-right: 5px;
-  left: 65.22%;
-  right: 30.99%;
-  top: 80.96%;
-  bottom: 17.25%;
   color: #74A798;
 }
 
 .facebook3 {
   float: right;
   margin-right: 5px;
-  left: 73%;
-  right: 25.03%;
-  top: 80.96%;
-  bottom: 17.26%;
   color: #74A798;
 }
 
 .whatsapp3 {
   float: right;
   margin-right: 5px;
-  left: 78.67%;
-  right: 17.39%;
-  top: 80.86%;
-  bottom: 17.29%;
   color: #74A798;
 }
 
-.botaoModal {
-  background-color: #333333;
+.icones-menu {
+  margin-top: 5px;
 }
 
-.listaModal {
-  margin: 25px;
-  width: 97px;
-  height: 29px;
-  left: 75px;
-  top: 271px;
+.telefone-menu {
+  float: left;
+  margin: 70px 0 0 980px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 130%;
-  letter-spacing: 0.02em;
-  color: #808080;
-  text-decoration: none;
-  list-style: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #74A798;
 }
 
-.listaModal:hover {
-  color: #00FFB2;
-  text-decoration: none;
+.instagram-menu {
+  float: right;
+  margin: 70px 0 0 20px;
+  color: #74A798;
 }
 
-.textoModal {
+.facebook-menu {
+  float: right;
+  margin: 70px 0 0 20px;
+  color: #74A798;
+}
+
+.whatsapp-menu {
+  float: right;
+  margin: 70px 0 0 10px;
+  color: #74A798;
+}
+
+.texto-menu {
   float: left;
-  margin: 25px;
-  left: 15.53%;
-  right: 12.42%;
-  top: 87.11%;
-  bottom: 8.59%;
+  margin: 10px 0 0 980px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;

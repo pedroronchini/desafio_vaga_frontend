@@ -63,9 +63,39 @@
 
 
                   <li class="nav-item">
-                    <button type="button" class="btn menu" data-toggle="modal" data-target="#modalMenu" >
-                      <i class="fa fa-bars"></i>
-                    </button>
+                    <div id="menu-bar">
+                      <div id="menu" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                      </div>
+                      <ul class="nav" id="nav">
+                        <img src="./assets/logo.png" alt="Agência Caravela" class="logo-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <div class="icones-menu">
+                          <p class="telefone-menu">
+                            35 3722-2350
+                          </p>
+                          <a href="https://www.instagram.com/agenciacaravela/">
+                            <i class="fa fa-instagram instagram-menu"></i>
+                          </a>
+                          <a href="https://www.facebook.com/agcaravela">
+                            <i class="fa fa-facebook facebook-menu"></i>
+                          </a>
+                          <a href="https://web.whatsapp.com">
+                            <i class="fa fa-whatsapp whatsapp-menu"></i>
+                          </a>
+                          <p class="texto-menu">
+                            Rua Rio Grande do Sul, 1182 - Centro Poços de Caldas MG - CEP 37701-001
+                          </p>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="menu-bg" id="menu-bg"></div>
                   </li>
 
                 </ul>
@@ -108,63 +138,6 @@
       </header>
     </div>
   </section>
-
-  <!-- Modal Menu -->
-  <div class="modal fade " id="modalMenu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content modal-black">
-        <div class="modal-header">
-          <img src="./assets/logo.png" alt="Agência Caravela">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li class="listaModal">
-              <a href="#home" class="listaModal">Home</a>
-            </li>
-
-            <li class="listaModal">
-              <a href="#servicos" class="listaModal">Serviços</a>
-            </li>
-
-            <li class="listaModal">
-              <a href="#cases" class="listaModal">Cases</a>
-            </li>
-
-            <li class="listaModal">
-              <a href="#blog" class="listaModal">Blog</a>
-            </li>
-
-            <li class="listaModal" >
-              <a href="#solictarOrcamento" class="listaModal">Orçamentos</a>
-            </li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <div class="icones2">
-            <p class="telefone3">
-              35 3722-2350
-            </p>
-            <a href="https://www.instagram.com/agenciacaravela/">
-              <i class="fa fa-instagram instagram3"></i>
-            </a>
-            <a href="https://www.facebook.com/agcaravela">
-              <i class="fa fa-facebook facebook3"></i>
-            </a>
-            <a href="https://web.whatsapp.com">
-              <i class="fa fa-whatsapp whatsapp3"></i>
-            </a>
-            <p class="textoModal">
-              Rua Rio Grande do Sul, 1182 - Centro Poços de Caldas MG - CEP 37701-001
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <!-- Modal  Solicitar Orçamento-->
   <div class="modal fade " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -374,12 +347,17 @@
   <section id="blog">
     <div class="container">
       <div class="blog">
-        <h1 class="titulo5">Blog dos Marujos</h1>
-        <img src="./assets/icone-blog.png" alt="Garrafa" class="garrafa">
-        <a href="https://www.agenciacaravela.com.br">
-          <h3 class="texto1">Veja mais</h3>
-        </a>
-        <i class="fa fa-arrow-right flecha5"></i>
+        <div class="blog-titulo">
+          <h1 class="titulo5">Blog dos Marujos</h1>
+          <img src="./assets/icone-blog.png" alt="Garrafa" class="garrafa">
+        </div>
+        
+        <div class="blog-titulo">
+          <a href="https://www.agenciacaravela.com.br">
+            <h3 class="texto1">Veja mais</h3>
+          </a>
+          <i class="fa fa-arrow-right flecha5"></i>
+        </div>
       </div>
       <div class="row" style="margin: 0 65px 0 165px;">
         <div class="col-3 blog1">
@@ -453,7 +431,7 @@
           </div>
 
           <div class="orcamento2">
-            <p>
+            <p class="paragrafo6">
               Solicitar Orçamento
             </p>
             <button type="button" class="btn flecha" data-toggle="modal" data-target="#modal">
