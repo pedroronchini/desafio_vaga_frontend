@@ -927,3 +927,24 @@ textarea:focus, input:focus {
   line-height: 140%;
   color: #74A798;
 }
+
+
+figcaption {
+  float: inline-start;
+  width: 134px;
+  height: 31px;
+  left: 708px;
+  top: 1427px;
+
+/* B2 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+/* identical to box height, or 31px */
+
+
+color: #FFFFFF;
+}

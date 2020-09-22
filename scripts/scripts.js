@@ -1,24 +1,24 @@
 function onClickMenu() {
-	document.getElementById("menu").classList.toggle("change");
-	document.getElementById("nav").classList.toggle("change");
-	
-	document.getElementById("menu-bg").classList.toggle("change-bg");
+  document.getElementById("menu").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+
+  document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-  $("#enviar").click(function() {
+  $("#enviar").click(function () {
 
-    let nome = $("#inputNome").val();
-    let email = $("#inputEmail").val();
-    let telefone = $("#inputTelefone").val();
-    let mensagem = $("#modalTextarea").val();
+    var nome = $("#inputNome").val();
+    var email = $("#inputEmail").val();
+    var telefone = $("#inputTelefone").val();
+    var mensagem = $("#modalTextarea").val();
 
-    $.post('',{
+    $.post('', {
       "nome": nome,
       "email": email,
       "telefone": telefone,
       "mensagem": mensagem,
     });
   });
-});
+})
