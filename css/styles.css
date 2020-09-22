@@ -194,7 +194,6 @@ nav .telefone {
   line-height: 130%;
   letter-spacing: 0.02em;
   color: #00FFB2;
-  border: 1px solid #000000;
   }
 
 .subtitulo {
@@ -272,6 +271,7 @@ nav .telefone {
 }
 
 .titulo2 {
+  padding: 0 0 0 20px;
   width: 286px;
   height: 70px;
   left: 1048px;
@@ -286,6 +286,8 @@ nav .telefone {
 }
 
 .marujo {
+  margin-left: 105px;
+  margin-bottom: 5px;
   width: 37.24px;
   height: 38px;
   margin-top: 75px;
@@ -294,6 +296,7 @@ nav .telefone {
 }
 
 .texto2 {
+  margin-left: 65px;
   width: 148px;
   height: 31px;
   left: 182px;
@@ -307,6 +310,7 @@ nav .telefone {
 }
 
 .setaVerde {
+  margin-left: 105px;
   width: 31.33px;
   height: 46.34px;
   left: 467.32px;
@@ -314,6 +318,7 @@ nav .telefone {
 }
 
 .texto {
+  margin-left:  155px;
   width: 696px;
   height: 279px;
   left: 869px;
@@ -483,25 +488,32 @@ nav .telefone {
   top: 2721px;
 }
 
+.projetos {
+  width: 100vw;
+  margin-left: 0;
+  margin-top: 15px;
+}
+
 .projeto1 {
-  width: 533px;
+  width: 563px;
   height: 372px;
-  left: 362px;
+  left: 352px;
   top: 2816px;
 }
 
 .projeto2 {
-  left: 50.99%;
-  right: 18.18%;
-  top: 61.71%;
-  bottom: 30.13%;
+  width: 533px;
+  height: 372px;
+  margin-left: 0;
+  left: 362px;
+  top: 2816px;
   border-radius: 12px;
 }
 
 .subtitulo3 {
   width: 229px;
   height: 29px;
-  left: 402px;
+  left: 602px;
   top: 3236px;
   font-family: Poppins;
   font-style: normal;
@@ -513,10 +525,10 @@ nav .telefone {
 }
 
 .paragrafo3 {
-  left: 12.84%;
-  right: 12.67%;
-  top: 89.6%;
-  bottom: -2.31%;
+  width: 445px;
+  height: 66px;
+  left: 402px;
+  top: 3281px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
